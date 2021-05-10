@@ -3,40 +3,96 @@
 body
 {
     font-family: "Raleway",sans-serif;
-    margin: 0;
+    margin: auto;
 }
 a
 {
     text-decoration: none;
     color:initial;
 }
-header
+.liste-puce
 {
+    list-style-type: none;
+    display: flex;
+   
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+.TitrePrincipale
+{
+    display:grid; 
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+    align-items: center;
     width: 98%;
     max-width: 1440px;
     margin: auto;
 }
-.hotels-principal
+
+.recheche
 {
-    background-color: #F2F2F2;
+    background-color:#F2F2F2 ;
+    margin-right: 650px;
 }
-.hotels-principal
+.hotels-principal-chambre
 {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-   /*grid-template-rows: 1fr 1fr;*/
+    
+    margin: 20px;
+    background: white;
+    border-radius: 20px;
+   /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;*/
+    border: 5px solid transparent;
+    box-shadow: 0px 0px 0px 6px 0px #0000002e;
+    
 }
 
+.hotels-principal-chambres
+{
+    
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    border-radius: 20px;
+   /* vertical-align: baseline;*/
+    align-items: baseline;
+    /*justify-content: center;*/
+   /* grid-column: 20px;*/
+    background-color: #F2F2F2;
+   /*grid-template-rows: 1fr 1fr;*/
+   
+}
+.hotels-populaires-chambres
+{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
 
 .hotels-principal-chambre-img-host
 {
-    width: 250px;
+    width: 250px ;
+    position: relative;
     margin: 0;
+    border-radius: 20px;
+    height: 7.6rem;
+    
+}
+.hotel-name>.hotel-price>.price
+{
+    position:absolute;
+    bottom:0;
+    background-color: white;
 }
 .hotels-populaires-chambre-img-host
 {
-    width: 250px;
+    width: 250px 166px;
     margin: 0;
+    height: 7.6rem;
 }
 @media screen and (max-width: 1280px)
  
