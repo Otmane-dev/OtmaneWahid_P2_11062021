@@ -37,6 +37,7 @@ nav li
     background-color:#F2F2F2 ;
     margin-right: 650px;
 }
+/*hebergement marseille*/
 .hotels-principal-chambre
 {
     
@@ -52,6 +53,11 @@ nav li
     
 }
 
+ h2
+ {
+     grid-column-start: 1;
+     grid-column-end: 4;
+ }
 .hotels-principal-chambres
 {
     
@@ -67,20 +73,13 @@ nav li
    /*grid-template-rows: 1fr 1fr;*/
    
 }
-.hotels-populaires-chambres
-{
-    background-color: #F2F2F2;
-    border-radius: 20px;
-}
-
 .hotels-principal-chambre-img-host
 {
     width: 250px ;
     position: relative;
     margin: 0;
-    border-radius: 20px;
-    height: 7.6rem;
-    
+    border-radius:20px 20px 0px 0px;
+    height: 8rem;   
 }
 .hotel-name>.hotel-price>.price
 {
@@ -88,12 +87,52 @@ nav li
     bottom:0;
     background-color: white;
 }
+/*les plus populaires*/
+.hotels-populaires-chambres
+{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    border-radius:20px;
+    background-color: #F2F2F2;
+}
+.hotels-populaires-chambre
+{
+    margin: 20px;
+    background: white;
+    border-radius: 20px;
+   /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;*/
+    border: 5px solid transparent;
+    box-shadow: 0px 0px 0px 6px 0px #0000002e;
+
+}
+
 .hotels-populaires-chambre-img-host
 {
-    width: 250px 166px;
+    position:relative;
+    width: 250px ;
     margin: 0;
-    height: 7.6rem;
+    border-radius: 20px 0px 0px 20px;
+    height: 8rem;
+    
 }
+
+/*.chambre-text-populaire
+{
+    display:flex;
+    flex-direction: column;
+    flex:1;
+    min-height: 40%;
+    margin:4px 12px;
+    position:absolute;
+    box-sizing: border-box;
+    bottom:0;
+    background-color: white;
+}*/
 @media screen and (max-width: 1280px)
  
 {
