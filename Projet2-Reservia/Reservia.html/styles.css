@@ -87,6 +87,15 @@ nav li
     bottom:0;
     background-color: white;
 }
+button
+{
+    background-color:#0065FC;
+}
+
+i
+{
+    color:#0065FC;
+}
 /*les plus populaires*/
 .hotels-populaires-chambres
 {
