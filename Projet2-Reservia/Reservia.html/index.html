@@ -6,14 +6,14 @@
         <title>P2-Reservia</title>
         <script src="https://kit.fontawesome.com/47582b327c.js" crossorigin="anonymous"></script>
     </heat>
-    <body>
+    <bloc-page>
         <div id="blocPage">
             <!--en tête -->
             <header>
                 <div id="TitrePrincipale">
                     <div id="logo">
-                        <a href="images/Reservia.svg"> <img src="images/Reservia.svg" alt="logo"/> </a>
-                    </div>
+                        <a href="images/Reservia.svg"> <img class="logo" src="images/Reservia.svg" alt="logo"/> </a>
+                    
                     <div class="nav">
                         <nav>
                              <ul class="liste-puce">
@@ -23,23 +23,25 @@
                             </ul>
                         </nav>
                     </div>
-               
+                    </div>
+               </div>
             </header>
+            <body>
             <!--section 1 recherche-->
             <main>
-                </div>
+                
                     <div id="TrouvezHebergements"> 
-                         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                         <h1 class="trouvez-hebergement">Trouvez votre hébergement pour des vacances de rêve</h1>
                          <p>En plein centre ou en pleine nature</p>
                     </div>  
                     <div class="recheche"> 
                         <form class="recherche-endroie">
-                            <div class="icon-location"></div>
-                            <i class="fas fa-map-marker-alt"> </i>
+                            <div class="icon-location">
+                            <i class="fas fa-map-marker-alt"> </i></div>
                             
                             
                             
-                            <input class="recherche-endroie-input" type="search" placeholder="Marseille,Paris">
+                            <input class="recherche-endroie-input" type="search" placeholder="Marseille,Paris" class="bar-recherche">
                             <button class="search-form-recherche">
                                 <div class="search-form-recherche-text">Recherche</div>
                                 <button class="button-research searchFormSubmitinputIcon fas fa-search" id="icon-glass"></button>
@@ -223,16 +225,16 @@
                      </div>
 
                      <p class="plus-dhotel">
-                        <a href="#">Afficher plus</a>
+                        <a href="#"><strong>Afficher plus</strong></a>
                     </p>
                         
                </a>
                </div>
-             
+             </div>
                   <!--les plus populaires-->
                 <div class="hotels-populaire" >
-                    <h2 class="hotels-populaire-titre">Les plus populaires</h2>
-                    <i class="fas fa-chart-line"></i>
+                    <h2 class="hotels-populaire-titre">Les plus populaires <i class="fas fa-chart-line"></i></h2>
+                   
                     <div class="hotels-populaires-chambres">
                         <a href="#">
                             <div class="hotels-populaires-chambre" id="populaire-chambre1">
@@ -240,9 +242,9 @@
                                 src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel le Soleil du Matin">
                             
                             <div class="chambre-text-populaire">
-                                <h3 class="hotel-names">Hôtel le Soleil du Matin</h3>
-                                <p class="hotel-price">Nuit à partir de 
-                                <span class="price"><strong>128£</strong></span>
+                                <h3 class="populaire-name">Hôtel le Soleil du Matin</h3>
+                                <p class="populaire-price">Nuit à partir de 
+                                <span class="prices"><strong>128£</strong></span>
                                 </p>
                             </div>
                                 <div class="etoile">
@@ -260,9 +262,9 @@
                                 src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
                             
                             <div class="chambre-text-populaire">
-                                <h3 class="hotel-names">Au coeur de l'eau Chambres d'hôtes</h3>
-                                <p class="hotel-price">Nuit à partir de 
-                                <span class="price"><strong>71£</strong></span>
+                                <h3 class="populaire-name">Au coeur de l'eau Chambres d'hôtes</h3>
+                                <p class="populaire-price">Nuit à partir de 
+                                <span class="prices"><strong>71£</strong></span>
                                 </p>
                             </div>
                                 <div class="etoile">
@@ -281,9 +283,9 @@
                                 src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et blanc">
                             
                             <div class="chambre-text-populaire">
-                                <h3 class="hotel-names">Hôtel Tout bleu et blanc</h3>
-                                <p class="hotel-price">Nuit à partir de 
-                                <span class="price"><strong>68£</strong></span>
+                                <h3 class="populaire-name">Hôtel Tout bleu et blanc</h3>
+                                <p class="populaire-price">Nuit à partir de 
+                                <span class="prices"><strong>68£</strong></span>
                                 </p>
                             </div>
                                 <div class="etoile">
@@ -308,63 +310,73 @@
                          <div class="activity-marseille" id="activity1">
                              <img class="activity-marseille-nat"
                               src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieut Port">
-                         </div>
+                         
                          <h3 class="activity-titre">Vieut Port</h3>
+                        </div>
                     </a>
                     <a href="#">
                         <div class="activity-marseille" id="activity2">
                             <img class="activity-marseille-nat"
                              src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Promègues">
-                        </div>
+                        
                         <h3 class="activity-titre">Fort de Promègues</h3>
+                    </div>
                    </a>
                    <a href="#">
                     <div class="activity-marseille" id="activity3">
                         <img class="activity-marseille-nat"
                          src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="îles du Frioul">
-                    </div>
+                    
                     <h3 class="activity-titre">îles du Frioul</h3>
+                  </div>
                    </a>
                    <a href="#">
                     <div class="activity-marseille" id="activity4">
                         <img class="activity-marseille-nat"
                          src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
-                    </div>
+                    
                     <h3 class="activity-titre">Parc National des Calanques</h3>
+                    </div>
                    </a>
                    <a href="#">
                     <div class="activity-marseille" id="activity5">
                         <img class="activity-marseille-nat"
                          src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
-                    </div>
+                    
                     <h3 class="activity-titre">Notre-Dame-de-la-Garde</h3>
+                    </div>
                    </a>
                    <a href="#">
                     <div class="activity-marseille" id="activity6">
                         <img class="activity-marseille-nat"
                          src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
-                    </div>
+                    
                     <h3 class="activity-titre">Parc Longchamp</h3>
+                    </div>
                </a>
                </section>
             </main>
+        </body>
             <!--section 5 footer-->
-            <footer class="footer-blocs">
-                <div class="footer-bloc footer-bloc-a-propos">
+            <footer>
+                <div class="footer-blocs">
+                <div class="footer-bloc">
                     <h3 class="footer-titre">A propos</h3>
                     <a class="footer-link">Fonctionnement du site</a>
                     <a class="footer-link">Conditions générales de vente</a>
                     <a class="footer-link">Donnéeset confidencialité</a>
                 </div>
-                <div class="footer-bloc footer-bloc-nos-hebergements">
+                <div class="footer-bloc">
                     <h3 class="footer-titre">Nos hébèrgements</h3>
                     <a class="fotter-link">Charte qualité</a>
                     <a class="footer-link">Soumettre votre hôtel</a>
                 </div>
-                <div class="footer-bloc footer-Assistance">
+                <div class="footer-bloc">
                     <h3 class="footer-titre">Assistance</h3>
                     <a class="footer-link">Centre d'aide</a>
                     <a class="footer-link">Nous contacter</a>
                 </div>
+            </div>
                 </footer>
-    </body>
+            </div>
+        </bloc-page>

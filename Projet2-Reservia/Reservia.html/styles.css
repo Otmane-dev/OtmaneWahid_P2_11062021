@@ -3,7 +3,15 @@
 body
 {
     font-family: "Raleway",sans-serif;
-    margin: auto;
+    
+}
+header 
+{
+    margin: 20px;
+}
+main
+{
+    margin: 20px;
 }
 a
 {
@@ -17,8 +25,10 @@ a
    
 }
 
+
 nav li
 {
+    
     margin-right: 15px;
 }
 
@@ -31,20 +41,54 @@ nav li
     max-width: 1440px;
     margin: auto;
 }
-
-.recheche
+.recherche-endroie
 {
-    background-color:#F2F2F2 ;
-    margin-right: 650px;
+    display:inline-flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-bottom: 35px;
 }
+.icon-location
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 53px;
+    height: 53px;
+    background-color: #F2F2F2;
+    border-radius: 14px 0px 0px 14px;
+}
+.recherche-endroie-input
+{
+    padding: 0 0 0 20px;
+    height: 53px;
+    width: 220px;
+    border:none;
+    border-top: solid 1px #F2F2F2;
+    border-bottom: solid 1px #F2F2F2;
+}
+.search-form-recherche
+{
+    border:none;
+    border-radius: 0px 14px 14px 0px;
+    color:white;
+    font-size: 16px;
+    padding: 17px;
+}
+
 /*hebergement marseille*/
+.hotels-principal
+{
+    margin: 20px;
+}
 .hotels-principal-chambre
 {
-    
+
     margin: 20px;
     background: white;
     border-radius: 20px;
-   /* border-top-left-radius: 20px;
+    width: 250px;
+    /*border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;*/
@@ -53,10 +97,11 @@ nav li
     
 }
 
- h2
+ h2.hotels-principal-titre
  {
      grid-column-start: 1;
      grid-column-end: 4;
+     margin: 20px;
  }
 .hotels-principal-chambres
 {
@@ -65,10 +110,12 @@ nav li
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 20px;
     border-radius: 20px;
+    width: 1000px;
+   /* margin-left: 20px;
+    margin-right: 20px;*/
    /* vertical-align: baseline;*/
     align-items: baseline;
-    /*justify-content: center;*/
-   /* grid-column: 20px;*/
+    grid-column: 20px;
     background-color: #F2F2F2;
    /*grid-template-rows: 1fr 1fr;*/
    
@@ -87,6 +134,10 @@ nav li
     bottom:0;
     background-color: white;
 }
+.plus-dhotel
+{
+    margin: 20px;
+}
 button
 {
     background-color:#0065FC;
@@ -97,13 +148,29 @@ i
     color:#0065FC;
 }
 /*les plus populaires*/
-.hotels-populaires-chambres
+i.fas.fa-chart-line
+{
+    display: flex;
+    justify-content: flex-end;
+     color: black;
+}
+/*h2.hotels-populaire-titre
+{
+    display: flex;
+    float: left;
+}*/
+
+.hotels-populaire
 {
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 20px;
     border-radius:20px;
+    width: 700px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     background-color: #F2F2F2;
 }
 .hotels-populaires-chambre
@@ -111,6 +178,8 @@ i
     margin: 20px;
     background: white;
     border-radius: 20px;
+    width: 600px;
+   
    /* border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -122,11 +191,13 @@ i
 
 .hotels-populaires-chambre-img-host
 {
+    display:flex;
+    float: left;
     position:relative;
-    width: 250px ;
+    width: 200px ;
     margin: 0;
     border-radius: 20px 0px 0px 20px;
-    height: 8rem;
+    height: 7rem;
     
 }
 
@@ -136,12 +207,140 @@ i
     flex-direction: column;
     flex:1;
     min-height: 40%;
-    margin:4px 12px;
+    margin:100pxpx 100px;
     position:absolute;
     box-sizing: border-box;
     bottom:0;
     background-color: white;
-}*/
+ }*/
+ /*activity*/
+ .activites
+ {
+     display:grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+ }
+ div#activity1.activity-marseille
+ {
+    display:grid;
+    background: white;
+    box-shadow: 6px 6px 10px gainsboro;
+    width: 250px;
+    grid-column-gap: 20px;
+    border-radius: 20px ;
+    border-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    border: 5px solid transparent;
+    box-shadow: 0px 0px 0px 6px 0px #0000002e;
+ }
+ /*img.activity-marseille-nat1
+ {
+    height: 350px;
+ }*/
+ div#activity2.activity-marseille
+ {
+    display:grid;
+    background: white;
+    box-shadow: 6px 6px 10px gainsboro;
+    width: 250px;
+    grid-column-gap: 20px;
+    border-radius: 20px ;
+    border-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 5px solid transparent;
+    box-shadow: 0px 0px 0px 6px 0px #0000002e;
+ }
+ div#activity3.activity-marseille
+ {
+    display:grid;
+    background: white;
+    box-shadow: 6px 6px 10px gainsboro;
+    width: 250px;
+    grid-column-gap: 20px;
+    border-radius: 20px ;
+    border-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 5px solid transparent;
+    box-shadow: 0px 0px 0px 6px 0px #0000002e;
+ }
+ div#activity4.activity-marseille
+ {
+    display:grid;
+    background: white;
+    box-shadow: 6px 6px 10px gainsboro;
+    width: 250px;
+    grid-column-gap: 20px;
+    border-radius: 20px ;
+    border-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 5px solid transparent;
+    box-shadow: 0px 0px 0px 6px 0px #0000002e;
+ }
+ div#activity5.activity-marseille
+ {
+    display:grid;
+    background: white;
+    box-shadow: 6px 6px 10px gainsboro;
+    width: 250px;
+    grid-column-gap: 20px;
+    border-radius: 20px ;
+    border-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 5px solid transparent;
+    box-shadow: 0px 0px 0px 6px 0px #0000002e;
+ }
+ div#activity6.activity-marseille
+ {
+    display:grid;
+    background: white;
+    box-shadow: 6px 6px 10px gainsboro;
+    width: 250px;
+    grid-column-gap: 20px;
+    border-radius: 20px ;
+    border-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 5px solid transparent;
+    box-shadow: 0px 0px 0px 6px 0px #0000002e;
+ }
+ .activity-marseille-nat
+ {
+    width: 250px;
+    /* height: 450;*/
+     border-radius: 20px 20px 0px 0px;
+     background: white;
+ }
+
+ /*footer bloc*/
+footer
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+}
+.footer-blocs
+{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+}
+.footer-bloc
+{
+    padding:30px;
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
 @media screen and (max-width: 1280px)
  
 {
