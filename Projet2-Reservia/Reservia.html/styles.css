@@ -29,8 +29,11 @@ a
 .filtre-ul
 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
     padding: 20px;
+}
+section.hotels {
+    display: flex;
 }
 .filtres-button
 {
@@ -40,6 +43,16 @@ a
     border-bottom: solid 2px  #F2F2F2;
     border-left: solid 2px #F2F2F2;
     border-right: solid 2px #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: auto;
+    cursor: pointer;
+    width: 200px;
+    height: 45px;
+    border-radius: 25px ;
+}
+.filtre-titre
+{
     display: flex;
     align-items: center;
     justify-content: auto;
@@ -80,7 +93,7 @@ nav li
     margin: 15px;
 }
 
-.TitrePrincipale
+#titrePrincipale
 {
     display:grid; 
     grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
@@ -88,6 +101,10 @@ nav li
     width: 98%;
     max-width: 1440px;
     margin: auto;
+}
+.nav
+{
+    grid-column: 4 / 5;
 }
 .recherche-endroie
 {
