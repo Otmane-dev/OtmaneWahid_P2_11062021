@@ -29,6 +29,7 @@ a
 .filtre-ul
 {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-columns:1fr 1fr 1fr 1fr 1fr;
     padding: 20px;
 }
@@ -37,7 +38,7 @@ section.hotels {
 }
 .filtres-button
 {
-   
+
     list-style-type: none;  
     border-top:solid 2px #F2F2F2;
     border-bottom: solid 2px  #F2F2F2;
@@ -141,7 +142,9 @@ nav li
     padding: 17px;
     cursor: pointer;
 }
-
+section.hotels {
+    display: flex;
+}
 /*hebergement marseille*/
 .hotels-principal
 {
@@ -178,6 +181,7 @@ nav li
     grid-column-gap: 20px;
     border-radius: 20px;
     width: 860px;
+    height: 740px;
    /* margin-left: 20px;
     margin-right: 20px;*/
    /* vertical-align: baseline;*/
@@ -235,6 +239,7 @@ i.fas.fa-chart-line
     grid-column-gap: 20px;
     border-radius:20px;
     width: 550px;
+    height: 740px;
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
