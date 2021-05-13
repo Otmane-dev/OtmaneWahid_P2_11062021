@@ -22,14 +22,47 @@ a
 {
     list-style-type: none;
     display: flex;
+    justify-content: flex-end;
+    
    
 }
+.filtre-ul
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.filtres-button
+{
+   
+    list-style-type: none;  
+    border-top:solid 2px #F2F2F2;
+    border-bottom: solid 2px  #F2F2F2;
+    border-left: solid 2px #F2F2F2;
+    border-right: solid 2px #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: auto;
+    cursor: pointer;
+    width: 200px;
+    height: 45px;
+    border-radius: 25px ;
+}
 
+.filtre-bull-button
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 49px;
+    height: 49px;
+    background-color:#DEEBFF ;
+    border-radius: 25px;
+}
 
 nav li
 {
     
-    margin-right: 15px;
+    margin: 15px;
 }
 
 .TitrePrincipale
@@ -74,6 +107,7 @@ nav li
     color:white;
     font-size: 16px;
     padding: 17px;
+    cursor: pointer;
 }
 
 /*hebergement marseille*/
@@ -87,7 +121,7 @@ nav li
     margin: 20px;
     background: white;
     border-radius: 20px;
-    width: 250px;
+    width: 200px;
     /*border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -110,19 +144,19 @@ nav li
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 20px;
     border-radius: 20px;
-    width: 1000px;
+    width: 840px;
    /* margin-left: 20px;
     margin-right: 20px;*/
    /* vertical-align: baseline;*/
     align-items: baseline;
-    grid-column: 20px;
+    grid-column: 5px;
     background-color: #F2F2F2;
    /*grid-template-rows: 1fr 1fr;*/
    
 }
 .hotels-principal-chambre-img-host
 {
-    width: 250px ;
+    width: 200px ;
     position: relative;
     margin: 0;
     border-radius:20px 20px 0px 0px;
@@ -152,7 +186,7 @@ i.fas.fa-chart-line
 {
     display: flex;
     justify-content: flex-end;
-     color: black;
+    color: black;
 }
 /*h2.hotels-populaire-titre
 {
@@ -167,18 +201,22 @@ i.fas.fa-chart-line
     grid-template-rows: 1fr;
     grid-column-gap: 20px;
     border-radius:20px;
-    width: 700px;
+    width: 550px;
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
     background-color: #F2F2F2;
+}
+h2.hotels-populaire-titre
+{
+    margin:20px;
 }
 .hotels-populaires-chambre
 {
     margin: 20px;
     background: white;
     border-radius: 20px;
-    width: 600px;
+    width: 500px;
    
    /* border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -194,7 +232,7 @@ i.fas.fa-chart-line
     display:flex;
     float: left;
     position:relative;
-    width: 200px ;
+    width: 150px ;
     margin: 0;
     border-radius: 20px 0px 0px 20px;
     height: 7rem;
@@ -338,6 +376,7 @@ footer
     
     display: flex;
     flex-direction: column;
+    cursor: pointer;
     
 }
 
