@@ -5,10 +5,12 @@ body
     font-family: "Raleway",sans-serif;
     
 }
-header 
+#bloc-page
 {
-    margin: 20px;
+    margin-left: 20px;
+    margin-left: 20px;
 }
+
 main
 {
     margin: 20px;
@@ -31,7 +33,7 @@ a
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-    padding: 20px;
+    width: 900px;
 }
 section.hotels {
     display: flex;
@@ -58,7 +60,7 @@ section.hotels {
     align-items: center;
     justify-content: auto;
     cursor: pointer;
-    width: 200px;
+    width: 100px;
     height: 45px;
     border-radius: 25px ;
 }
@@ -86,6 +88,11 @@ section.hotels {
     border-right: solid 2px #F2F2F2;
     border-radius: 25px;
 }
+.info
+{
+    display: flex;
+    justify-content: start;
+}
 
 
 nav li
@@ -105,7 +112,7 @@ nav li
 }
 .nav
 {
-    grid-column: 4 / 5;
+    grid-column: 5 / 5;
 }
 .recherche-endroie
 {
@@ -148,7 +155,7 @@ section.hotels {
 /*hebergement marseille*/
 .hotels-principal
 {
-    margin: 20px;
+    margin-top: auto;
 }
 .hotels-principal-chambre
 {
@@ -194,14 +201,16 @@ section.hotels {
 .hotels-principal-chambre-img-host
 {
     width: 220px ;
+    height: 130px;
     position: relative;
     margin: 0;
     border-radius:20px 20px 0px 0px;
-    height: 8rem;   
+      
 }
 .hotel-name>.hotel-price>.price
 {
     position:absolute;
+    
     bottom:0;
     background-color: white;
 }
@@ -223,7 +232,7 @@ i.fas.fa-chart-line
 {
     display: flex;
     justify-content: flex-end;
-    color: black;
+    color: black
 }
 /*h2.hotels-populaire-titre
 {
@@ -231,31 +240,43 @@ i.fas.fa-chart-line
     float: left;
 }*/
 
-.hotels-populaire
+.hotels-populaires-chambres
 {
+    
+    
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 55px 1fr 200px 1fr  ;
     grid-column-gap: 20px;
     border-radius:20px;
-    width: 550px;
+    align-items: center;
+    width: 450px;
     height: 740px;
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
+    border-bottom: 20px;
     background-color: #F2F2F2;
+   
 }
+
 h2.hotels-populaire-titre
 {
+    
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+    margin-top: 20px;
     margin:20px;
 }
+
 .hotels-populaires-chambre
 {
     margin: 20px;
     background: white;
     border-radius: 20px;
-    width: 500px;
-   
+    width: 400px;
+    height: 165px;
    /* border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -270,10 +291,12 @@ h2.hotels-populaire-titre
     display:flex;
     float: left;
     position:relative;
-    width: 150px ;
+    width: 165px ;
+    height: 165px;
     margin: 0;
+    margin-right: 20px;
     border-radius: 20px 0px 0px 20px;
-    height: 7rem;
+    
     
 }
 
@@ -290,23 +313,25 @@ h2.hotels-populaire-titre
     background-color: white;
  }*/
  /*activity*/
- .activites
+ #activite
  {
      display:grid;
      grid-template-columns: 1fr 1fr 1fr ;
+     grid-template-rows: 1fr 1fr;
+     grid-template-rows: 270px;
  }
- div#activity1.activity-marseille
+#activity1
  {
     display:grid;
     background: white;
     box-shadow: 6px 6px 10px gainsboro;
     width: 250px;
     height: 235px;
+    
     grid-column-gap: 20px;
     border-radius: 20px ;
     border-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+   
     
     border: 5px solid transparent;
     box-shadow: 0px 0px 0px 6px 0px #0000002e;
@@ -315,7 +340,7 @@ h2.hotels-populaire-titre
  {
     height: 350px;
  }*/
- div#activity2.activity-marseille
+ #activity2
  {
     display:grid;
     background: white;
@@ -325,12 +350,11 @@ h2.hotels-populaire-titre
     grid-column-gap: 20px;
     border-radius: 20px ;
     border-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    
     border: 5px solid transparent;
     box-shadow: 0px 0px 0px 6px 0px #0000002e;
  }
- div#activity3.activity-marseille
+ #activity3
  {
     display:grid;
     background: white;
@@ -340,14 +364,14 @@ h2.hotels-populaire-titre
     grid-column-gap: 20px;
     border-radius: 20px ;
     border-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    
     border: 5px solid transparent;
     box-shadow: 0px 0px 0px 6px 0px #0000002e;
  }
- div#activity4.activity-marseille
+ #activity4
  {
     display:grid;
+    
     background: white;
     box-shadow: 6px 6px 10px gainsboro;
     width: 250px;
@@ -355,12 +379,11 @@ h2.hotels-populaire-titre
     grid-column-gap: 20px;
     border-radius: 20px ;
     border-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    
     border: 5px solid transparent;
     box-shadow: 0px 0px 0px 6px 0px #0000002e;
  }
- div#activity5.activity-marseille
+ #activity5
  {
     display:grid;
     background: white;
@@ -370,23 +393,22 @@ h2.hotels-populaire-titre
     grid-column-gap: 20px;
     border-radius: 20px ;
     border-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    
     border: 5px solid transparent;
     box-shadow: 0px 0px 0px 6px 0px #0000002e;
  }
- div#activity6.activity-marseille
+ #activity6
  {
     display:grid;
+    grid-column-gap: 20px;
+    border-radius: 20px ;
+    border-bottom: 20px;
     background: white;
     box-shadow: 6px 6px 10px gainsboro;
     width: 250px;
     height: 235px;
-    grid-column-gap: 20px;
-    border-radius: 20px ;
-    border-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    
+    
     border: 5px solid transparent;
     box-shadow: 0px 0px 0px 6px 0px #0000002e;
  }
@@ -397,7 +419,19 @@ h2.hotels-populaire-titre
     border-radius: 20px 20px 0px 0px;
     background: white;
  }
+ .activity-marseille-nat1
+ {
+     width: 250px;
+     height: 166px;
+     border-radius: 20px 20px 0px 0px;
+ }
+ .activity-marseille-nat2
+ {
+    width: 250px;
+    height: 160px;
+    border-radius: 20px 20px 0px 0px;
 
+ }
  /*footer bloc*/
 footer
 {
@@ -424,7 +458,7 @@ footer
     
 }
 
-@media screen and (max-width: 1280px)
+@media screen and (max-width: 1440px)
  
 {
     /* Vos règles CSS pour les mobiles ici */
