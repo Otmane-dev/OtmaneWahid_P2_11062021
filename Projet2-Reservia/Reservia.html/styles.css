@@ -2,7 +2,7 @@
 @import url( https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/variable-fonts);
 body
 {
-    width: 1440px;
+    
     font-family: "Raleway",sans-serif;
     
 }
@@ -188,10 +188,10 @@ section.hotels
     justify-content: center;
     align-items: baseline;
     flex-direction: column;
-    margin: auto;
+    margin: 20px;
     background: white;
     border-radius: 20px;
-    width: 250px;
+    width: auto;
     height: 245px;
     
     
@@ -218,9 +218,11 @@ section.hotels
     
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-   
+    grid-gap: 10px;
+    
     border-radius: 20px;
-    width: 1000px;
+    width: auto;
+    min-width: 980px;
     height: 740px;
    /* margin-left: 20px;
     margin-right: 20px;*/
@@ -233,7 +235,8 @@ section.hotels
 }
 .hotels-principal-chambre-img-host
 {
-    width: 250px ;
+    width: auto ;
+    min-width: 280px;
     height: 130px;
     position: relative;
     object-fit: cover;
@@ -286,10 +289,12 @@ i.fas.fa-chart-line
     
     align-items: center;
     
-    width: 450px;
+    width: auto;
+    min-width: 440px;
     height: 740px;
     margin-top: 20px;
     margin-left: 20px;
+    margin-bottom: 20px;
     margin-right: 20px;
     border-bottom: 20px;
     background-color: #F2F2F2;
@@ -311,12 +316,10 @@ h2.hotels-populaire-titre
     margin: 20px;
     background: white;
     border-radius: 20px;
-    width: 400px;
+    width: auto;
+    min-width: 400px;
     height: 150px;
-   /* border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;*/
+    
     border: 5px solid transparent;
     box-shadow: 0px 0px 0px 6px 0px #0000002e;
 
@@ -358,7 +361,7 @@ h2.hotels-populaire-titre
      grid-template-rows: 3fr 0.3fr 0.3fr 0.3fr 0.3fr 3fr;
      grid-gap: 30px;
      
-     width: 1440px;
+     width: auto;
      
  }
  .act1
@@ -603,110 +606,20 @@ footer
     
 }
 /*  règles CSS pour les mobiles ici */
-@media screen and (max-width: 1024px)
- 
+@media screen and (max-width:1400px)
 {
-    .bloc-page
+    .activity
     {
-        width: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-areas: 
+        "act1 act2 act3"
+        "act4 act5 act6"; 
     }
-}
-@media all and (max-width:550px)
-{
-    header
+    .act1
     {
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .filtre-ul
-    {
-        grid-template-columns: 1fr 1fr  ;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-auto-flow: auto;
-        width: 100px;
-        
-    }
-    .filtre-titre
-    {
-        grid-column-start:1  ;
-        grid-column-end: span 2 ;
-    }
-    .filtres-button
-    {
-        
-        margin-bottom:10px;
-    }
-    .search-form-recherche
-    {
-        display: none;
-    }
-    #icon-glass
-    {
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        border: none;
-        width: 53px;
-        height: 53px;
-        color: white;
-        background-color:#0065FC;
-        border-radius: 0px 14px 14px 0px;
-    }
-    }
-
-@media all and (max-width:1000px)
-{
-    section.hotels
-    {
-        flex-direction: column-reverse;
-        
-    }
-}
-@media all and (max-width:800px)
-{
-    .hotels-principal-chambres
-    {
-        display: flex;
-        flex-direction: column;
-        width: 400px;
-        height: auto;
-        background: none;
-    }
-    .hotels-principal-chambre
-    {
-        
-    background: white;
-    box-shadow: 6px 6px 10px gainsboro;
-   
-    width: 300px;
-    height: 280px;
-    margin-bottom: 20px;
-    grid-column-gap: 20px;
-    border-radius: 20px ;
-    border-bottom: 20px;
-   
-    
-    border: 5px solid transparent;
-    box-shadow: 0px 0px 0px 6px 0px #0000002e;
-    }
-    .hotels-principal-chambre-img-host
-{
-    width: 300px ;
-    height: 166px;
-    position: relative;
-    margin: 0;
-    border-radius:20px 20px 0px 0px;
-      
-}
-}
-@media all and (max-width:1000px)
-{
-    .activitys
-    {
-        display: flex;
-        flex-direction: column;
-         
+        grid-column-start: auto;
+        grid-row-end: auto;
     }
     
     #activity1
@@ -780,7 +693,245 @@ footer
 }
 
 
-@media all and (max-width:600px)
+
+
+@media screen and (max-width: 1024px)
+ 
+{
+    .bloc-page
+    {
+        width: auto;
+    }
+}
+
+
+@media screen and (max-width:1000px)
+{
+    section.hotels
+    {
+        flex-direction: column-reverse;
+        
+    }
+}
+
+
+
+
+@media screen and (max-width:900px)
+{
+    .filtre-ul
+    {
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr ;
+        
+        width: 100px;
+        
+    }
+    .filtre-titre
+    {
+        grid-column-start:1  ;
+        grid-column-end: span 3 ;
+    }
+
+    h2.hotels-principal-titre
+    {
+        
+        grid-column-start: 1;
+        grid-column-end: span 2;
+      
+    }
+    .hotels-principal-chambres
+    {
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px 1fr 1fr 1fr 50px;
+        min-width: 400px;
+        width: auto;
+        height: auto;
+       
+    }
+    .hotels-principal-chambre
+    {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+    margin: 20px;
+    background: white;
+    border-radius: 20px;
+    width: auto;
+    min-width: 242px;
+    height: 245px;
+    
+    
+    /*border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;*/
+    border: 5px solid transparent;
+    box-shadow: 0px 0px 0px 6px 0px #0000002e;
+    
+ 
+    
+   
+    }
+   
+    .hotels-principal-chambre-img-host
+    {
+    width: 100%;
+    min-width: 242px;
+    height: 130px;
+    position: relative;
+    object-fit: cover;
+    margin: 0;
+    border-radius:20px 20px 0px 0px;
+      
+    }
+   /* .hotels-principal-chambre
+    {
+        
+    background: white;
+    box-shadow: 6px 6px 10px gainsboro;
+    justify-content: left;
+    align-items: start;
+    width: 300px;
+    height: 280px;
+    margin-bottom: 20px;
+    grid-column-gap: 20px;
+    border-radius: 20px ;
+    border-bottom: 20px;
+   
+    
+    border: 5px solid transparent;
+    box-shadow: 0px 0px 0px 6px 0px #0000002e;
+    }
+    .hotels-principal-chambre-img-host
+    {
+    width: 300px ;
+    height: 166px;
+    position: relative;
+    margin: 0;
+    border-radius:20px 20px 0px 0px;
+      
+    }
+    .chambre-text
+    {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }*/
+ 
+}
+
+
+@media screen and (max-width:600px)
+{
+    h2.hotels-principal-titre
+    {
+        
+        grid-column-start: 1;
+        grid-column-end: 1;
+        
+      
+    }
+    .hotels-principal-chambres
+    {
+       
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr 1fr 50px;
+        
+        
+        background: none;
+    }
+    .hotels-principal-chambre
+    {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+    margin: 20px;
+    background: white;
+    border: 5px solid transparent;
+    box-shadow: 6px 6px 10px gainsboro;
+    border-radius: 20px;
+    width: auto;
+    min-width: 242px;
+    height: 245px;
+    
+    
+    
+    /*border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;*/
+   
+    }
+
+    .hotels-principal-chambre-img-host
+    {
+    width: 100%;
+    min-width: 242px;
+    height: 130px;
+    position: relative;
+    object-fit: cover;
+    margin: 0;
+    border-radius:20px 20px 0px 0px;
+      
+    }
+}
+@media screen and (max-width:500px)
+{
+    #titre
+}
+@media screen and (max-width:550px)
+{
+    header
+    {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .filtre-titre
+    {
+        grid-column-start: 1 ;
+        grid-column-end: span 2 ;
+    }
+    .filtre-ul
+    {
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        
+        width: 100px;
+        
+    }
+    
+    .filtres-button
+    {
+        
+        margin-bottom:10px;
+    }
+    .search-form-recherche
+    {
+        display: none;
+    }
+    #icon-glass
+    {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        width: 53px;
+        height: 53px;
+        color: white;
+        background-color:#0065FC;
+        border-radius: 0px 14px 14px 0px;
+    }
+    }
+
+
+@media screen and (max-width:600px)
 {
     .footer-blocs
     {
