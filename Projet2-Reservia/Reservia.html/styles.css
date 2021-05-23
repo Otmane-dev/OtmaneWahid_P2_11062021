@@ -4,6 +4,8 @@ body
 {
     
     font-family: "Raleway",sans-serif;
+    width: 100%;
+    max-width: 1024px;
     
 }
 #bloc-page
@@ -18,17 +20,10 @@ main
 }
 a
 {
-    text-decoration: none;
-    color:initial;
+    text-decoration: inherit;
+    color:inherit;
 }
-.liste-puce
-{
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-    color: #0065FC;
-   
-}
+
 .filtre-ul
 {
     display: grid;
@@ -110,27 +105,66 @@ a
 }
 
 
-nav li
+
+/*#titrePrincipale*/
+header
 {
+    display:grid; 
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    grid-template-areas: "logo . hebergement activ inscription";
+    align-items: center;
+    max-width: auto;
     
     margin: 15px;
 }
 
-#titrePrincipale
+.logo
 {
-    display:grid; 
-    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
-    align-items: center;
-    width: 100%;
-    width: 1440px;
-    
-    margin: auto;
+    grid-area: logo;
 }
-.nav
+.nav-bar-hebergement
 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    display:flex;
+    grid-area: hebergement;
+    display: flex;
+    justify-content: center;
+    color: #0065FC;
+    margin:15px;
+}
+.underline-effect
+{
+    
+    width: 100%;
+    height: 3px;
+    border-top: 3px  solid ;
+    color:#0065FC;
+}
+.nav-bar-activ
+{
+    grid-area: activ;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.inscription
+{
+    grid-area: inscription;
+    display: flex;
+    justify-content: center;
+    color: #0065FC;
+    margin: 15px;
+}
+/*.nav*/
+
+.liste-puce
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    color: #0065FC;
+    
 }
 .recherche-endroie
 {
@@ -294,7 +328,7 @@ i.fas.fa-chart-line
     height: 740px;
     margin-top: 20px;
     margin-left: 20px;
-    margin-bottom: 20px;
+    
     margin-right: 20px;
     border-bottom: 20px;
     background-color: #F2F2F2;
@@ -410,7 +444,7 @@ h2.hotels-populaire-titre
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    position:absolute;
+    
     background: white;
     box-shadow: 6px 6px 10px gainsboro;
    
@@ -436,7 +470,7 @@ h2.hotels-populaire-titre
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    position:absolute;
+    
     background: white;
     box-shadow: 6px 6px 10px gainsboro;
     width: 340px;
@@ -453,7 +487,7 @@ h2.hotels-populaire-titre
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    position:absolute;
+    
     background: white;
     box-shadow: 6px 6px 10px gainsboro;
     width: 340px;
@@ -474,7 +508,7 @@ h2.hotels-populaire-titre
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    position:absolute;
+    
     background: white;
     box-shadow: 6px 6px 10px gainsboro;
     width: 340px;
@@ -491,7 +525,7 @@ h2.hotels-populaire-titre
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    position:absolute;
+    
     background: white;
     box-shadow: 6px 6px 10px gainsboro;
     width: 340px;
@@ -510,7 +544,7 @@ h2.hotels-populaire-titre
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    position:absolute;
+    
     border-radius: 20px ;
     border-bottom: 20px;
     background: white;
@@ -606,20 +640,57 @@ footer
     
 }
 /*  règles CSS pour les mobiles ici */
-@media screen and (max-width:1400px)
+@media  screen and (min-width: 1400px)
+{
+    .activity
+ {
+     height: 550px;
+     display:grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr ;
+     grid-template-rows: 3fr 0.3fr 0.3fr 0.3fr 0.3fr 3fr;
+     grid-gap: 30px;
+     
+     width: auto;
+     
+ }
+}
+    
+
+@media screen and (max-width:1350px)
 {
     .activity
     {
+        height: 650px;
+        max-width: 1350px;
+        width: auto;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr ;
-        grid-template-areas: 
-        "act1 act2 act3"
-        "act4 act5 act6"; 
+        grid-template-areas: "act1 act2 act3"
+                              "act4 act5 act6";
     }
     .act1
     {
-        grid-column-start: auto;
-        grid-row-end: auto;
+        grid-area: act1;
+    }
+    .act2
+    {
+        grid-area: act2;
+    }
+    .act3
+    {
+        grid-area: act3;
+    }
+    .act4
+    {
+        grid-area: act4;
+    }
+    .act5
+    {
+        grid-area: act5;
+    }
+    .act6
+    {
+        grid-area: act6;
     }
     
     #activity1
@@ -882,14 +953,26 @@ footer
 }
 @media screen and (max-width:500px)
 {
-    #titre
+    /*#titrePrincipale*/
+    #nav-bar
+    {
+        
+        grid-template-columns:  1fr;
+        grid-template-rows:1fr 1fr ;
+        grid-template-areas: 
+        "logo inscript"
+        "activite hebergement";
+    }
 }
 @media screen and (max-width:550px)
 {
     header
     {
-        display: flex;
-        flex-direction: column;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:"logo  inscription"
+                           " hebergement activ" ;
         
     }
 

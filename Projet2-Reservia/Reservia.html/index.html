@@ -1,31 +1,48 @@
 <!DOCTYPE html>
 <html>
-    <heat>
+    <head>
         <meta charset="UFT-8" />
 		<link rel="stylesheet" href="styles.css" />
         <title>P2-Reservia</title>
         <script src="https://kit.fontawesome.com/47582b327c.js" crossorigin="anonymous"></script>
-    </heat>
-    <bloc-page>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    </head>
+    <body>
         <div id="blocPage">
             <!--en tête -->
-            <header>
-                <div id="titrePrincipale">
-                    <div id="logo">
+            <header class="header">
+                <!--<nav class="nav-bar">-->
+               <!-- <div id="titrePrincipale">-->
+                    <!--<div id="logo">-->
                         <a href="images/Reservia.svg"> <img class="logo" src="images/Reservia.svg" alt="logo"/> </a>
-                    </div>
-                    <div class="nav">
-                        <nav>
-                             <ul class="liste-puce">
-                               <li> <div class="hebergements"> <a href="#blocs">Hebergements</a></div></li>
-                               <li> <div class="activites" > <a href="#bloc">Activites</a> </div></li>
-                                <li><div class="inscription">  <a href="#">S'Inscrir</a> </div></li>
-                            </ul>
-                        </nav>
-                    </div>
-               </div>
+                   <!-- </div>-->
+                   <!-- <div class="nav">-->
+                        
+                             <nav class="nav-bar-hebergement">
+                                 
+                                 <div class="nav-bar-link-hebergement" >
+                                    <div class="underline-effect"></div>
+                                    <a href="#blocs">Hebergements</a>
+                                </div>
+                                </nav>
+                                <nav class="nav-bar-activ">
+                                     
+                                     <div class="nav-bar-link-activ">
+                                        <div class="underline-effect"></div>
+                                     <a href="#bloc">Activites</a> 
+                                    </div>
+                                </nav>
+                            
+                                <a class="inscription"  href="#">S'Inscrir</a> 
+                            
+                             
+                        
+                    
+               
+            
             </header>
-            <body>
+            
             <!--section 1 recherche-->
             <main>
                 
@@ -341,7 +358,7 @@
                 <!--section 4 Activité-->
                 <h2 class="titre-activités"id="bloc">Activités à Marseille</h2>
                 
-                <section class="activites" id="activite">
+                <section class="activites-bloc" id="activite-bloc">
                     <div class="activitys" >
                     <div class="activity">
                     <div class="act1">   
@@ -409,7 +426,7 @@
                </section>
             
             </main>
-            </body>
+            
             </div>
            
         
@@ -435,5 +452,5 @@
                 </div>
             </div>
             </footer>
-        </bloc-page>
+        </body>
        </html>
