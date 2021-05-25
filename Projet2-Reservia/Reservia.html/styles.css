@@ -14,7 +14,7 @@ body
     margin-left: 20px;
 }
 
-main
+.main
 {
     margin: 20px;
 }
@@ -389,6 +389,7 @@ h2.hotels-populaire-titre
  /*activity*/
  .activity
  {
+    max-width: 1500px;
      height: 550px;
      display:grid;
      grid-template-columns: 1fr 1fr 1fr 1fr ;
@@ -396,6 +397,7 @@ h2.hotels-populaire-titre
      grid-gap: 30px;
      
      width: auto;
+   
      
  }
  .act1
@@ -448,7 +450,8 @@ h2.hotels-populaire-titre
     background: white;
     box-shadow: 6px 6px 10px gainsboro;
    
-    width: 340px;
+    max-width: 340px;
+    width:auto;
     height: 550px;
 
     
@@ -473,7 +476,8 @@ h2.hotels-populaire-titre
     
     background: white;
     box-shadow: 6px 6px 10px gainsboro;
-    width: 340px;
+    max-width: 340px;
+    width: auto;
     height: 306px;
     
     border-radius: 20px ;
@@ -490,7 +494,8 @@ h2.hotels-populaire-titre
     
     background: white;
     box-shadow: 6px 6px 10px gainsboro;
-    width: 340px;
+    max-width: 340px;
+    width: auto;
     height: 213px;
     
     border-radius: 20px ;
@@ -511,7 +516,8 @@ h2.hotels-populaire-titre
     
     background: white;
     box-shadow: 6px 6px 10px gainsboro;
-    width: 340px;
+    max-width: 340px;
+    width: auto;
     height: 550px;
     
     border-radius: 20px ;
@@ -528,7 +534,8 @@ h2.hotels-populaire-titre
     
     background: white;
     box-shadow: 6px 6px 10px gainsboro;
-    width: 340px;
+    max-width: 340px;
+    width:auto; 
     height: 215px;
     
     border-radius: 20px ;
@@ -549,7 +556,8 @@ h2.hotels-populaire-titre
     border-bottom: 20px;
     background: white;
     box-shadow: 6px 6px 10px gainsboro;
-    width: 340px;
+    max-width: 340px;
+    width: auto;
     height: 306px;
     
     
@@ -571,7 +579,8 @@ h2.hotels-populaire-titre
  .activity-marseille-nat1
  {
      position: relative;
-     width: 340px;
+     width: auto;
+     max-width: 340px;
      height: 480px;
      overflow: hidden;
      object-fit: cover;
@@ -582,7 +591,8 @@ h2.hotels-populaire-titre
  .activity-marseille-nat2
  {
     position:relative;
-    width: 340px;
+    width: auto;
+    max-width: 340px;
     height: 480px;
     overflow: hidden;
     object-fit: cover;
@@ -595,6 +605,7 @@ h2.hotels-populaire-titre
  .activity-marseille-nat3
  {
     position: relative;
+    width: auto;
     width: 340px;
     height: 245px;
     object-fit: cover;
@@ -605,6 +616,7 @@ h2.hotels-populaire-titre
  .activity-marseille-nat4
  {
     position: relative;
+    width: auto;
     width: 340px;
     height: 166px;
     object-fit: cover;
@@ -660,7 +672,7 @@ footer
 {
     .activity
     {
-        height: 650px;
+        height: auto;
         max-width: 1350px;
         width: auto;
         grid-template-columns: 1fr 1fr 1fr;
@@ -695,68 +707,84 @@ footer
     
     #activity1
     {
-        width: 300px;
-        height: 280px;
+
+        width: auto;
+        min-width: 300px;
+        height: 260px;
         margin-bottom: 20px;
     }
     #activity2
     {
-        width: 300px;
-        height: 280px;
+        width: auto;
+        min-width: 300px;
+        height: 260px;
         margin-bottom: 20px;
     }
     #activity3
     {
-        width: 300px;
-        height: 280px;
+        width:auto;
+        min-width: 300px;
+        height: 260px;
         margin-bottom: 20px;
     }
     #activity4
     {
-        width: 300px;
-        height: 280px;
+        width: auto;
+        min-width: 300px;
+        height: 260px;
         margin-bottom: 20px;
     }
     #activity5
     {
-        width: 300px;
-        height: 280px;
+        width: auto;
+        min-width: 300px;
+        height: 260px;
         margin-bottom: 20px;
     } 
     #activity6
     {
-        width: 300px;
-        height: 280px;
+        width: auto;
+        min-width: 300px;
+        height: 260px;
         margin-bottom: 20px;
     }
-    .activity-marseille-nat2
+   
+    .activity-marseille-nat1
     {
-        width: 300px ;
-        height: 170px;
+        width: 100%;
+        width: auto;
+        min-width: 340px ;
+        height: 200px;
         
         margin: 0;
         border-radius:20px 20px 0px 0px;
     }
-    .activity-marseille-nat1
+    .activity-marseille-nat2
     {
-        width: 300px ;
-        height: 170px;
+        width: 100%;
+        width: auto;
+        min-width: 340px ;
+        height: 200px;
         
         margin: 0;
         border-radius:20px 20px 0px 0px;
     }
     .activity-marseille-nat3
     {
-        width: 300px ;
-        height: 170px;
+        width: 100%;
+        width: auto;
+        min-width: 340px ;
+        height: 200px;
        
         margin: 0;
         border-radius:20px 20px 0px 0px;
     }
     .activity-marseille-nat4
     {
-        width: 300px ;
-        height: 170px;
+        width: 100%;
+        width: auto;
+        min-width: 340px ;
+        height: 200px;
        
         margin: 0;
         border-radius:20px 20px 0px 0px;
@@ -773,36 +801,6 @@ footer
     {
         width: auto;
     }
-}
-
-
-@media screen and (max-width:1000px)
-{
-    section.hotels
-    {
-        flex-direction: column-reverse;
-        
-    }
-}
-
-
-
-
-@media screen and (max-width:900px)
-{
-    .filtre-ul
-    {
-        grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 1fr 1fr 1fr ;
-        
-        width: 100px;
-        
-    }
-    .filtre-titre
-    {
-        grid-column-start:1  ;
-        grid-column-end: span 3 ;
-    }
 
     h2.hotels-principal-titre
     {
@@ -817,7 +815,7 @@ footer
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 50px 1fr 1fr 1fr 50px;
-        min-width: 400px;
+        min-width: 0px;
         width: auto;
         height: auto;
        
@@ -891,11 +889,165 @@ footer
         margin-top: 0px;
         margin-bottom: 10px;
     }*/
+
+
+        .activity
+        {
+            height: auto;
+            max-width: 1350px;
+            width: auto;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr ;
+            grid-template-areas: "act1 act2"
+                                 "act3 act4"
+                                 "act5 act6";
+        }
+        .act1
+        {
+            grid-area: act1;
+        }
+        .act2
+        {
+            grid-area: act2;
+        }
+        .act3
+        {
+            grid-area: act3;
+        }
+        .act4
+        {
+            grid-area: act4;
+        }
+        .act5
+        {
+            grid-area: act5;
+        }
+        .act6
+        {
+            grid-area: act6;
+        }
+        
+        #activity1
+        {
+    
+            width: auto;
+            min-width: 300px;
+            height: 260px;
+            margin-bottom: 20px;
+        }
+        #activity2
+        {
+            width: auto;
+            min-width: 300px;
+            height: 260px;
+            margin-bottom: 20px;
+        }
+        #activity3
+        {
+            width:auto;
+            min-width: 300px;
+            height: 260px;
+            margin-bottom: 20px;
+        }
+        #activity4
+        {
+            width: auto;
+            min-width: 300px;
+            height: 260px;
+            margin-bottom: 20px;
+        }
+        #activity5
+        {
+            width: auto;
+            min-width: 300px;
+            height: 260px;
+            margin-bottom: 20px;
+        } 
+        #activity6
+        {
+            width: auto;
+            min-width: 300px;
+            height: 260px;
+            margin-bottom: 20px;
+        }
+       
+        .activity-marseille-nat1
+        {
+            width: 100%;
+            width: auto;
+            min-width: 340px ;
+            height: 200px;
+            
+            margin: 0;
+            border-radius:20px 20px 0px 0px;
+        }
+        .activity-marseille-nat2
+        {
+            width: 100%;
+            width: auto;
+            min-width: 340px ;
+            height: 200px;
+            
+            margin: 0;
+            border-radius:20px 20px 0px 0px;
+        }
+        .activity-marseille-nat3
+        {
+            width: 100%;
+            width: auto;
+            min-width: 340px ;
+            height: 200px;
+           
+            margin: 0;
+            border-radius:20px 20px 0px 0px;
+        }
+        .activity-marseille-nat4
+        {
+            width: 100%;
+            width: auto;
+            min-width: 340px ;
+            height: 200px;
+           
+            margin: 0;
+            border-radius:20px 20px 0px 0px;
+        }
+
+}
+
+
+@media screen and (max-width:1024px)
+{
+    section.hotels
+    {
+        flex-direction: column-reverse;
+        
+    }
+}
+
+
+
+
+@media screen and (max-width:900px)
+{
+    .filtre-ul
+    {
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr ;
+        
+        width: 100px;
+        
+    }
+    .filtre-titre
+    {
+        grid-column-start:1  ;
+        grid-column-end: span 3 ;
+    }
+
  
 }
 
 
-@media screen and (max-width:600px)
+@media screen and (max-width:650px)
 {
     h2.hotels-principal-titre
     {
@@ -907,7 +1059,7 @@ footer
     }
     .hotels-principal-chambres
     {
-       
+      
         display: grid;
         grid-template-columns: 1fr ;
         grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr 1fr 50px;
@@ -921,13 +1073,14 @@ footer
     justify-content: center;
     align-items: baseline;
     flex-direction: column;
+    max-width: 500px;
     margin: 20px;
     background: white;
     border: 5px solid transparent;
     box-shadow: 6px 6px 10px gainsboro;
     border-radius: 20px;
     width: auto;
-    min-width: 242px;
+    min-width: 340px;
     height: 245px;
     
     
@@ -949,6 +1102,11 @@ footer
     margin: 0;
     border-radius:20px 20px 0px 0px;
       
+    }
+    .activity
+    {
+        display:flex;
+        flex-direction: column;
     }
 }
 @media screen and (max-width:500px)
