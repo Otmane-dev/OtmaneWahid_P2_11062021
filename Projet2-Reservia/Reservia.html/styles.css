@@ -5,7 +5,7 @@ body
     
     font-family: "Raleway",sans-serif;
     width: 100%;
-    max-width: 1024px;
+    max-width: 1500px;
     
 }
 #bloc-page
@@ -46,7 +46,7 @@ a
     align-items: center;
     justify-content: auto;
     cursor: pointer;
-    width: 200px;
+    width: 220px;
     height: 45px;
     border-radius: 25px ;
    
@@ -86,6 +86,7 @@ a
     justify-content: center;
     align-items: center;
     width: 49px;
+    min-width: 49px;
     height: 49px; 
     border-top: solid 2px #F2F2F2;
     border-bottom: solid 2px #F2F2F2;
@@ -450,7 +451,7 @@ h2.hotels-populaire-titre
     background: white;
     box-shadow: 6px 6px 10px gainsboro;
    
-    max-width: 340px;
+   /* max-width: 340px;*/
     width:auto;
     height: 550px;
 
@@ -476,7 +477,7 @@ h2.hotels-populaire-titre
     
     background: white;
     box-shadow: 6px 6px 10px gainsboro;
-    max-width: 340px;
+   /* max-width: 340px;*/
     width: auto;
     height: 306px;
     
@@ -494,7 +495,7 @@ h2.hotels-populaire-titre
     
     background: white;
     box-shadow: 6px 6px 10px gainsboro;
-    max-width: 340px;
+   /* max-width: 340px;*/
     width: auto;
     height: 213px;
     
@@ -516,8 +517,8 @@ h2.hotels-populaire-titre
     
     background: white;
     box-shadow: 6px 6px 10px gainsboro;
-    max-width: 340px;
-    width: auto;
+    /*max-width: 340px;*/
+    width: 100%;
     height: 550px;
     
     border-radius: 20px ;
@@ -534,7 +535,7 @@ h2.hotels-populaire-titre
     
     background: white;
     box-shadow: 6px 6px 10px gainsboro;
-    max-width: 340px;
+    /*max-width: 340px;*/
     width:auto; 
     height: 215px;
     
@@ -556,7 +557,7 @@ h2.hotels-populaire-titre
     border-bottom: 20px;
     background: white;
     box-shadow: 6px 6px 10px gainsboro;
-    max-width: 340px;
+   /* max-width: 340px;*/
     width: auto;
     height: 306px;
     
@@ -579,8 +580,8 @@ h2.hotels-populaire-titre
  .activity-marseille-nat1
  {
      position: relative;
-     width: auto;
-     max-width: 340px;
+     width: 100%;
+    /* max-width: 340px;*/
      height: 480px;
      overflow: hidden;
      object-fit: cover;
@@ -591,8 +592,8 @@ h2.hotels-populaire-titre
  .activity-marseille-nat2
  {
     position:relative;
-    width: auto;
-    max-width: 340px;
+    width: 100%;
+    /*max-width: 340px;*/
     height: 480px;
     overflow: hidden;
     object-fit: cover;
@@ -605,9 +606,9 @@ h2.hotels-populaire-titre
  .activity-marseille-nat3
  {
     position: relative;
-    width: auto;
-    width: 340px;
-    height: 245px;
+    width: 100%;
+    /*width: 340px;*/
+    height: 238px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
     background: white;
@@ -616,9 +617,9 @@ h2.hotels-populaire-titre
  .activity-marseille-nat4
  {
     position: relative;
-    width: auto;
-    width: 340px;
-    height: 166px;
+    width: 100%;
+    /*width: 340px;*/
+    height: 143px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
     background: white;
@@ -629,7 +630,7 @@ h2.hotels-populaire-titre
  /*footer bloc*/
 footer
 {
-    width: 1550px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -637,15 +638,17 @@ footer
 }
 .footer-blocs
 {
+    padding: 50px;
     display:flex;
+    
     justify-content: space-between;
-    width: 1440px;
+    
     
 }
 .footer-bloc
 {
     padding:30px;
-    
+    width: 400px;
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -752,7 +755,7 @@ footer
     .activity-marseille-nat1
     {
         width: 100%;
-        width: auto;
+        
         min-width: 340px ;
         height: 200px;
         
@@ -762,7 +765,7 @@ footer
     .activity-marseille-nat2
     {
         width: 100%;
-        width: auto;
+        
         min-width: 340px ;
         height: 200px;
         
@@ -772,7 +775,7 @@ footer
     .activity-marseille-nat3
     {
         width: 100%;
-        width: auto;
+        
         min-width: 340px ;
         height: 200px;
        
@@ -782,7 +785,7 @@ footer
     .activity-marseille-nat4
     {
         width: 100%;
-        width: auto;
+        
         min-width: 340px ;
         height: 200px;
        
@@ -896,7 +899,7 @@ footer
             height: auto;
             max-width: 1350px;
             width: auto;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr ;
             grid-template-areas: "act1 act2"
                                  "act3 act4"
@@ -974,7 +977,7 @@ footer
         .activity-marseille-nat1
         {
             width: 100%;
-            width: auto;
+            /*width: auto;*/
             min-width: 340px ;
             height: 200px;
             
@@ -984,7 +987,7 @@ footer
         .activity-marseille-nat2
         {
             width: 100%;
-            width: auto;
+           /* width: auto;*/
             min-width: 340px ;
             height: 200px;
             
@@ -994,7 +997,7 @@ footer
         .activity-marseille-nat3
         {
             width: 100%;
-            width: auto;
+           /* width: auto;*/
             min-width: 340px ;
             height: 200px;
            
@@ -1004,7 +1007,7 @@ footer
         .activity-marseille-nat4
         {
             width: 100%;
-            width: auto;
+           /* width: auto;*/
             min-width: 340px ;
             height: 200px;
            
@@ -1033,7 +1036,8 @@ footer
     {
         grid-template-columns: 1fr 1fr 1fr ;
         grid-template-rows: 1fr 1fr 1fr ;
-        
+        grid-gap:20px;
+        margin-bottom: 20px;
         width: 100px;
         
     }
@@ -1073,7 +1077,7 @@ footer
     justify-content: center;
     align-items: baseline;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 480px;
     margin: 20px;
     background: white;
     border: 5px solid transparent;
@@ -1107,7 +1111,95 @@ footer
     {
         display:flex;
         flex-direction: column;
+        width: 100%;
     }
+    #activity1
+        {
+    
+            width: auto;
+            max-width: 480px;
+            min-width: 340px;
+            height: 260px;
+            margin-bottom: 20px;
+        }
+        #activity2
+        {
+            width: auto;
+            max-width: 480px;
+            min-width: 340px;
+            height: 260px;
+            margin-bottom: 20px;
+        }
+        #activity3
+        {
+            width:auto;
+            max-width: 480px;
+            min-width: 340px;
+            height: 260px;
+            margin-bottom: 20px;
+        }
+        #activity4
+        {
+            width: auto;
+            max-width: 480px;
+            min-width: 340px;
+            height: 260px;
+            margin-bottom: 20px;
+        }
+        #activity5
+        {
+            width: auto;
+            max-width: 480px;
+            min-width: 340px;
+            height: 260px;
+            margin-bottom: 20px;
+        } 
+        #activity6
+        {
+            width: auto;
+            max-width: 480px;
+            min-width: 340px;
+            height: 260px;
+            margin-bottom: 20px;
+        }
+       
+        .activity-marseille-nat1
+        {
+            width: 100%;
+            
+            height: 200px;
+            
+            margin: 0;
+            border-radius:20px 20px 0px 0px;
+        }
+        .activity-marseille-nat2
+        {
+            width: 100%;
+            
+            height: 200px;
+            
+            margin: 0;
+            border-radius:20px 20px 0px 0px;
+        }
+        .activity-marseille-nat3
+        {
+            width: 100%;
+           
+            height: 200px;
+           
+            margin: 0;
+            border-radius:20px 20px 0px 0px;
+        }
+        .activity-marseille-nat4
+        {
+            width: 100%;
+           
+            height: 200px;
+           
+            margin: 0;
+            border-radius:20px 20px 0px 0px;
+        }
+
 }
 @media screen and (max-width:500px)
 {
@@ -1139,11 +1231,12 @@ footer
         grid-column-start: 1 ;
         grid-column-end: span 2 ;
     }
+    
     .filtre-ul
     {
         grid-template-columns: 1fr 1fr ;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        
+       
         width: 100px;
         
     }
