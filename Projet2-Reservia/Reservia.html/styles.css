@@ -631,7 +631,8 @@ h2.hotels-populaire-titre
 footer
 {
     
-    display: flex;
+    /*display: flex;*/
+    max-width: 1500px;
     justify-content: center;
     align-items: center;
     background-color: #F2F2F2;
@@ -646,13 +647,45 @@ footer
     
 }
 .footer-bloc
-{
-    padding:30px;
+{ 
     width: 400px;
     display: flex;
     flex-direction: column;
+}
+#fonctionnement
+{
     cursor: pointer;
-    
+    margin-bottom: 10px;
+}
+#condition
+{
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+#donnees
+{
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+#charte
+{
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+#soumettre
+{
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+#centre
+{
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+#contacte
+{
+    cursor: pointer;
+    margin-bottom: 10px;
 }
 /*  règles CSS pour les mobiles ici */
 @media  screen and (min-width: 1400px)
@@ -1232,6 +1265,11 @@ footer
         grid-column-end: span 2 ;
     }
     
+
+
+
+
+
     .filtre-ul
     {
         grid-template-columns: 1fr 1fr ;
@@ -1246,6 +1284,8 @@ footer
         
         margin-bottom:10px;
     }
+   
+
     .search-form-recherche
     {
         display: none;
@@ -1262,7 +1302,7 @@ footer
         background-color:#0065FC;
         border-radius: 0px 14px 14px 0px;
     }
-    }
+}
 
 
 @media screen and (max-width:600px)
