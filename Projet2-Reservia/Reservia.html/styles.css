@@ -53,7 +53,19 @@ a
 }
 .filtres-button:hover
 {
-    transition: ease-in #0065FC ;
+    background-color: #DEEBFF;
+    transition: ease-in 0.2s ;
+}
+.filtres-button:hover .icone_filtre
+{
+   
+    color: #DEEBFF;
+
+}
+.filtres-button:hover .filtre-bull-button 
+{
+    background-color:#0065FC;
+    transition: ease-in 0.2s ;
 
 }
 .filtre-titre
@@ -661,7 +673,7 @@ footer
 }
 #fonctionnement:hover
 {
-    border-bottom: 2px solid black;
+    color:#0065FC;
 }
 #condition
 {
@@ -670,7 +682,7 @@ footer
 }
 #condition:hover
 {
-    border-bottom: 2px solid black;
+    color: #0065FC;
 }
 #donnees
 {
@@ -679,7 +691,7 @@ footer
 }
 #donnees:hover
 {
-    border-bottom: 2px solid black;
+    color: #0065FC;
 }
 #charte
 {
@@ -688,7 +700,7 @@ footer
 }
 #charte:hover
 {
-    border-bottom: 2px solid black;
+    color: #0065FC;
 }
 #soumettre
 {
@@ -697,7 +709,7 @@ footer
 }
 #soumettre:hover
 {
-    border-bottom: 2px solid black;
+    color: #0065FC;
 }
 #centre
 {
@@ -706,7 +718,7 @@ footer
 }
 #centre:hover
 {
-    border-bottom: 2px solid black;
+    color: #0065FC;
 }
 #contacte
 {
@@ -715,7 +727,7 @@ footer
 }
 #contacte:hover
 {
-    border-bottom: 2px solid black;
+    color: #0065FC;
 }
 /*  règles CSS pour les mobiles ici */
 @media  screen and (min-width: 1400px)
