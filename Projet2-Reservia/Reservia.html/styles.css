@@ -51,6 +51,11 @@ a
     border-radius: 25px ;
    
 }
+.filtres-button:hover
+{
+    transition: ease-in #0065FC ;
+
+}
 .filtre-titre
 {
     display: flex;
@@ -130,17 +135,22 @@ header
     grid-area: hebergement;
     display: flex;
     justify-content: center;
-    color: #0065FC;
+    
     margin:15px;
 }
-.underline-effect
+.nav-bar-hebergement:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+/*.underline-effect
 {
     
     width: 100%;
     height: 3px;
     border-top: 3px  solid ;
     color:#0065FC;
-}
+}*/
 .nav-bar-activ
 {
     grid-area: activ;
@@ -148,7 +158,10 @@ header
     justify-content: center;
     margin: 15px;
 }
-
+.nav-bar-activ:hover
+{
+    color: #0065FC;
+}
 .inscription
 {
     grid-area: inscription;
@@ -228,17 +241,14 @@ section.hotels
     border-radius: 20px;
     width: auto;
     height: 245px;
-    
-    
-    /*border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;*/
     border: 5px solid transparent;
     box-shadow: 0px 0px 0px 6px 0px #0000002e;
       
 }
-
+.hotels-principal-chambre
+{
+    transition: transform .5s;
+}
 .hotels-principal-chambre:hover {
     transform: scale(1.02);
 }
@@ -261,13 +271,8 @@ section.hotels
     width: auto;
     min-width: 980px;
     height: 740px;
-   /* margin-left: 20px;
-    margin-right: 20px;*/
-   /* vertical-align: baseline;*/
-    
-   
     background-color: #F2F2F2;
-   /*grid-template-rows: 1fr 1fr;*/
+   
 
 }
 .hotels-principal-chambre-img-host
@@ -308,11 +313,7 @@ i.fas.fa-chart-line
     justify-content: flex-end;
     color: black
 }
-/*h2.hotels-populaire-titre
-{
-    display: flex;
-    float: left;
-}*/
+
 
 .hotels-populaires-chambres
 {
@@ -359,7 +360,11 @@ h2.hotels-populaire-titre
     
     border: 5px solid transparent;
     box-shadow: 0px 0px 0px 6px 0px #0000002e;
-
+    
+}
+.hotels-populaires-chambre
+{
+    transition: transform .5s;
 }
 .hotels-populaires-chambre:hover {
     transform: scale(1.02);
@@ -380,19 +385,7 @@ h2.hotels-populaire-titre
     
 }
 
-/*.chambre-text-populaire
-{
-    display:flex;
-    flex-direction: column;
-    flex:1;
-    min-height: 40%;
-    margin:100pxpx 100px;
-    position:absolute;
-    box-sizing: border-box;
-    bottom:0;
-    background-color: white;
- }*/
- /*activity*/
+
  .activity
  {
     max-width: 1500px;
@@ -405,7 +398,10 @@ h2.hotels-populaire-titre
      width: auto;
        
  }
-
+ .activity-marseille
+ {
+    transition: transform .5s;
+ }
  .activity-marseille:hover {
     transform: scale(1.02);
 }
@@ -473,10 +469,7 @@ h2.hotels-populaire-titre
   
  }
  
- /*img.activity-marseille-nat1
- {
-    height: 350px;
- }*/
+
  #activity2
  {
     display: flex;
@@ -665,35 +658,63 @@ footer
     cursor: pointer;
     margin-bottom: 10px;
 }
+#fonctionnement:hover
+{
+    border-bottom: 2px solid black;
+}
 #condition
 {
     cursor: pointer;
     margin-bottom: 10px;
+}
+#condition:hover
+{
+    border-bottom: 2px solid black;
 }
 #donnees
 {
     cursor: pointer;
     margin-bottom: 10px;
 }
+#donnees:hover
+{
+    border-bottom: 2px solid black;
+}
 #charte
 {
     cursor: pointer;
     margin-bottom: 10px;
+}
+#charte:hover
+{
+    border-bottom: 2px solid black;
 }
 #soumettre
 {
     cursor: pointer;
     margin-bottom: 10px;
 }
+#soumettre:hover
+{
+    border-bottom: 2px solid black;
+}
 #centre
 {
     cursor: pointer;
     margin-bottom: 10px;
 }
+#centre:hover
+{
+    border-bottom: 2px solid black;
+}
 #contacte
 {
     cursor: pointer;
     margin-bottom: 10px;
+}
+#contacte:hover
+{
+    border-bottom: 2px solid black;
 }
 /*  règles CSS pour les mobiles ici */
 @media  screen and (min-width: 1400px)
@@ -876,12 +897,6 @@ footer
     width: auto;
     min-width: 242px;
     height: 245px;
-    
-    
-    /*border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;*/
     border: 5px solid transparent;
     box-shadow: 0px 0px 0px 6px 0px #0000002e;
     
@@ -901,38 +916,7 @@ footer
     border-radius:20px 20px 0px 0px;
       
     }
-   /* .hotels-principal-chambre
-    {
-        
-    background: white;
-    box-shadow: 6px 6px 10px gainsboro;
-    justify-content: left;
-    align-items: start;
-    width: 300px;
-    height: 280px;
-    margin-bottom: 20px;
-    grid-column-gap: 20px;
-    border-radius: 20px ;
-    border-bottom: 20px;
-   
-    
-    border: 5px solid transparent;
-    box-shadow: 0px 0px 0px 6px 0px #0000002e;
-    }
-    .hotels-principal-chambre-img-host
-    {
-    width: 300px ;
-    height: 166px;
-    position: relative;
-    margin: 0;
-    border-radius:20px 20px 0px 0px;
-      
-    }
-    .chambre-text
-    {
-        margin-top: 0px;
-        margin-bottom: 10px;
-    }*/
+  
 
 
         .activity
@@ -1127,14 +1111,6 @@ footer
     width: auto;
     min-width: 340px;
     height: 245px;
-    
-    
-    
-    /*border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;*/
-   
     }
 
     .hotels-principal-chambre-img-host
@@ -1320,4 +1296,4 @@ footer
         display: flex;
         flex-direction: column;
     }
-}/*transform=scall(1.1)*/
+}
