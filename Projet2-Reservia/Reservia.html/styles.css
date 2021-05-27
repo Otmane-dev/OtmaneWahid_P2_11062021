@@ -236,11 +236,13 @@ section.hotels
     border-bottom-right-radius: 20px;*/
     border: 5px solid transparent;
     box-shadow: 0px 0px 0px 6px 0px #0000002e;
-    
- 
-    
-   
+      
 }
+
+.hotels-principal-chambre:hover {
+    transform: scale(1.02);
+}
+
  h2.hotels-principal-titre
  {
      
@@ -359,6 +361,9 @@ h2.hotels-populaire-titre
     box-shadow: 0px 0px 0px 6px 0px #0000002e;
 
 }
+.hotels-populaires-chambre:hover {
+    transform: scale(1.02);
+}
 
 .hotels-populaires-chambre-img-host
 {
@@ -398,9 +403,12 @@ h2.hotels-populaire-titre
      grid-gap: 30px;
      
      width: auto;
-   
-     
+       
  }
+
+ .activity-marseille:hover {
+    transform: scale(1.02);
+}
  .act1
  {
      grid-row-start: 1;
@@ -1312,4 +1320,4 @@ footer
         display: flex;
         flex-direction: column;
     }
-}
+}/*transform=scall(1.1)*/
