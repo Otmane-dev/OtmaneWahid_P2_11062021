@@ -161,6 +161,7 @@ header
 .nav-bar-activ:hover
 {
     color: #0065FC;
+    border-top: 2px solid #0065FC;
 }
 .inscription
 {
