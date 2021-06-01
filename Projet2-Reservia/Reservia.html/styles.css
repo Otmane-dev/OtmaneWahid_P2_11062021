@@ -24,11 +24,12 @@ a
     color:inherit;
 }
 
-.filtre-ul
+.filtres-ul
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
     width: 900px;
    
 }
@@ -150,19 +151,29 @@ header
     
     margin:15px;
 }
+.underline-effect
+{
+    border-top: 2px transparent solid;
+}
+.nav-bar-link
+{
+    border-top: 2px transparent solid;
+}
+.underline-effect:hover
+{
+    color:#0065FC
+}
+/*
 .nav-bar-hebergement:hover
 {
     color: #0065FC;
     border-top: 2px solid #0065FC;
 }
-/*.underline-effect
+*/
+.nav-bar-hebergement:hover
 {
-    
-    width: 100%;
-    height: 3px;
-    border-top: 3px  solid ;
-    color:#0065FC;
-}*/
+    color: #0065FC;
+}
 .nav-bar-activ
 {
     grid-area: activ;
@@ -305,6 +316,10 @@ section.hotels
     
     bottom:0;
     background-color: white;
+}
+.chambre-text
+{
+    margin-left: 10px;
 }
 .plus-dhotel
 {
@@ -1063,6 +1078,29 @@ footer
         flex-direction: column-reverse;
         
     }
+    .hotels-populaires-chambres
+{
+    
+    
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 55px 1fr 200px 1fr  ;
+    grid-column-gap: 20px;
+    border-radius:20px;
+    
+    align-items: center;
+    
+    width: auto;
+    min-width: 440px;
+    height: 740px;
+    margin-top: 20px;
+    margin-left: 0px;
+    
+    margin-right: 0px;
+    border-bottom: 20px;
+    background-color: #F2F2F2;
+   
+}
 }
 
 
@@ -1070,7 +1108,7 @@ footer
 
 @media screen and (max-width:900px)
 {
-    .filtre-ul
+    .filtres-ul
     {
         grid-template-columns: 1fr 1fr 1fr ;
         grid-template-rows: 1fr 1fr 1fr ;
@@ -1116,7 +1154,7 @@ footer
     align-items: baseline;
     flex-direction: column;
     max-width: 480px;
-    margin: 20px;
+    margin: 0px;
     background: white;
     border: 5px solid transparent;
     box-shadow: 6px 6px 10px gainsboro;
@@ -1137,6 +1175,32 @@ footer
     border-radius:20px 20px 0px 0px;
       
     }
+    
+.hotels-populaires-chambres
+{
+    
+    
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 55px 1fr 200px 1fr  ;
+    grid-column-gap: 20px;
+    border-radius:20px;
+    
+    align-items: center;
+    
+    width: auto;
+    min-width: 440px;
+    height: 740px;
+    margin-top: 20px;
+    margin-left: 0px;
+    
+    margin-right: 0px;
+    border-bottom: 20px;
+    background-color: #F2F2F2;
+   
+}
+
+
     .activity
     {
         display:flex;
@@ -1256,25 +1320,58 @@ footer
         
     }
 
+    .filtres-ul
+    {
+        display: flex;
+        flex-direction: column;
+
+    }
+    #familial
+    {
+        display:flex;
+    }
+/*{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "filtre_h2"
+                             "economiques familials"
+                             "romantiques"
+                             "animauxx";
+        
+        
+    }
     .filtre-titre
     {
         grid-column-start: 1 ;
         grid-column-end: span 2 ;
     }
     
-
-
-
-
-
-    .filtre-ul
+    .filtre_h2
     {
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-       
-        width: 100px;
-        
+        grid-area: filtre_h2;
     }
+    .filtres-button>#economique
+    {
+        grid-area: economiques;
+    }
+    .filtres-button>#familial
+    {
+        grid-area: familials;
+    }
+    .filtres-button>#romantique
+    {
+        grid-area: romantiques;
+    }
+    .filtres-button>#animaux
+    {
+        grid-area: animauxx;
+    }*/
+
+
+
+
+
     
     .filtres-button
     {
