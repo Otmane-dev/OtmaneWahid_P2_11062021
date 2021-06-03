@@ -276,10 +276,7 @@ section.hotels
     display: flex;
 }
 /*hebergement marseille*/
-h3
-{
-    margin-block: auto;
-}
+
 .hotels-principal
 {
     margin-top: auto;
