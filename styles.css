@@ -2,7 +2,7 @@
 @import url( https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/variable-fonts);
 body
 {
-     font-family: "Raleway",sans-serif;
+    font-family: "Raleway",sans-serif;
     width: 100%;
     max-width: 1500px;
 }
@@ -10,7 +10,7 @@ body
 #bloc-page
 {
     margin-left: 20px;
-    margin-left: 20px;
+   
 }
 
 .main
@@ -276,7 +276,10 @@ section.hotels
     display: flex;
 }
 /*hebergement marseille*/
-
+h3.hotel-name
+{
+    margin-block: auto;
+}
 .hotels-principal
 {
     margin-top: auto;
@@ -360,6 +363,10 @@ i
 h2#bloc
 {
     margin: 20px;
+}
+h3.populaire-name
+{
+    margin-block: auto;
 }
 i.fas.fa-chart-line
 {
