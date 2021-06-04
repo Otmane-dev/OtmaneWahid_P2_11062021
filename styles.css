@@ -167,7 +167,7 @@ header
     justify-content: center;
     grid-template-areas: "logo . hebergement activ inscription";
     align-items: center;
-    width: 100%;
+    width: auto;
     margin: 15px;
     margin-top: 0px;   
 }
