@@ -439,15 +439,17 @@ h2.hotels-populaire-titre
     border-radius: 20px 0px 0px 20px;
 }
 
+
  .activity
  {
-    max-width: 1500px;
-    height: 550px;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 3fr 0.3fr 0.3fr 0.3fr 0.3fr 3fr;
-    grid-gap: 15px;
-    width: auto;   
+     height: 550px;
+     display:grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr ;
+     grid-template-rows: 3fr 0.3fr 0.3fr 0.3fr 0.3fr 3fr;
+     grid-gap: 30px;
+     margin: 20px;
+     width: auto;
+     
  }
  .activity-marseille
  {
@@ -729,23 +731,17 @@ footer
     color: #0065FC;
 }
 /*  règles CSS pour les mobiles ici */
-@media  screen and (min-width: 1400px)
+@media  screen and (max-width: 1487px)
 {
     .activity
  {
-     height: 550px;
-     display:grid;
-     grid-template-columns: 1fr 1fr 1fr 1fr ;
-     grid-template-rows: 3fr 0.3fr 0.3fr 0.3fr 0.3fr 3fr;
-     grid-gap: 30px;
-     margin: 20px;
-     width: auto;
+  grid-column-gap: 5px;
      
  }
 }
     
 
-@media screen and (max-width:1350px)
+@media screen and (max-width:1412px)
 {
     section.hotels
     {
@@ -790,42 +786,36 @@ footer
     #activity1
     {
         width: auto;
-        /*min-width: 300px;*/
         height: 260px;
         margin-bottom: 20px;
     }
     #activity2
     {
         width: auto;
-       /* min-width: 300px;*/
         height: 260px;
         margin-bottom: 20px;
     }
     #activity3
     {
         width:auto;
-       /* min-width: 300px;*/
         height: 260px;
         margin-bottom: 20px;
     }
     #activity4
     {
         width: auto;
-       /* min-width: 300px;*/
         height: 260px;
         margin-bottom: 20px;
     }
     #activity5
     {
         width: auto;
-       /* min-width: 300px;*/
         height: 260px;
         margin-bottom: 20px;
     } 
     #activity6
     {
         width: auto;
-       /* min-width: 300px;*/
         height: 260px;
         margin-bottom: 20px;
     }
@@ -833,7 +823,6 @@ footer
     .activity-marseille-nat1
     {
         width: 100%;
-       /* min-width: 340px ;*/
         height: 200px;
         margin: 0;
         border-radius:20px 20px 0px 0px;
@@ -841,7 +830,6 @@ footer
     .activity-marseille-nat2
     {
         width: 100%;
-       /* min-width: 340px ;*/
         height: 200px;
         margin: 0;
         border-radius:20px 20px 0px 0px;
@@ -849,7 +837,6 @@ footer
     .activity-marseille-nat3
     {
         width: 100%;
-       /* min-width: 340px ;*/
         height: 200px;
         margin: 0;
         border-radius:20px 20px 0px 0px;
@@ -857,7 +844,6 @@ footer
     .activity-marseille-nat4
     {
         width: 100%;
-       /* min-width: 340px ;*/
         height: 200px;
         margin: 0;
         border-radius:20px 20px 0px 0px;
