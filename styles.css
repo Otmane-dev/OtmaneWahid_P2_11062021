@@ -24,6 +24,120 @@ a
     text-decoration: inherit;
     color:inherit;
 }
+/*header*/
+header
+{
+    display:grid; 
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    grid-template-areas: "logo . hebergement activ inscription";
+    align-items: center;
+    width: auto;
+    margin: 15px;
+    margin-top: 0px;   
+}
+
+.logo
+{
+    grid-area: logo;
+}
+
+.nav-bar-hebergement
+{
+    grid-area: hebergement;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-top: 2px solid #DEEBFF;
+    color:#0065FC ;
+}
+
+.nav-bar-link
+{
+    border-top: 2px transparent solid;
+}
+
+.nav-bar-hebergement:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+.nav-bar-activ
+{
+    grid-area: activ;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.nav-bar-activ:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+.inscription
+{
+    grid-area: inscription;
+    display: flex;
+    justify-content: center;
+    color: #0065FC;
+    margin: 15px;
+}
+
+/*.nav*/
+
+.liste-puce
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    color: #0065FC;
+    
+}
+.recherche-endroie
+{
+    display:inline-flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+.icon-location
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 53px;
+    height: 53px;
+    background-color: #F2F2F2;
+    border-radius: 14px 0px 0px 14px;
+}
+.recherche-endroie-input
+{
+    
+    padding: 0 0 0 20px;
+    height: 53px;
+    width: 220px;
+    border:none;
+    border-top: solid 1px #F2F2F2;
+    border-bottom: solid 1px #F2F2F2;
+}
+
+.search-form-recherche
+{
+    border:none;
+    border-radius: 0px 14px 14px 0px;
+    color:white;
+    font-size: 16px;
+    padding: 17px;
+    cursor: pointer;
+}
+#icon-glass
+{
+    display: none;
+}
+
 /*filtre*/
 .filtre-ul
 {
@@ -159,124 +273,12 @@ a
     margin-left:20px;
 }
 
-/*#titrePrincipale*/
-header
-{
-    display:grid; 
-    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    justify-content: center;
-    grid-template-areas: "logo . hebergement activ inscription";
-    align-items: center;
-    width: auto;
-    margin: 15px;
-    margin-top: 0px;   
-}
 
-.logo
-{
-    grid-area: logo;
-}
-
-.nav-bar-hebergement
-{
-    grid-area: hebergement;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    border-top: 2px solid #DEEBFF;
-    color:#0065FC ;
-}
-
-.nav-bar-link
-{
-    border-top: 2px transparent solid;
-}
-
-.nav-bar-hebergement:hover
-{
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
-}
-
-.nav-bar-activ
-{
-    grid-area: activ;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-.nav-bar-activ:hover
-{
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
-}
-.inscription
-{
-    grid-area: inscription;
-    display: flex;
-    justify-content: center;
-    color: #0065FC;
-    margin: 15px;
-}
-
-/*.nav*/
-
-.liste-puce
-{
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-    color: #0065FC;
-    
-}
-.recherche-endroie
-{
-    display:inline-flex;
-    flex-direction: row;
-    margin-top: 15px;
-    margin-bottom: 35px;
-}
-.icon-location
-{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width: 53px;
-    height: 53px;
-    background-color: #F2F2F2;
-    border-radius: 14px 0px 0px 14px;
-}
-.recherche-endroie-input
-{
-    
-    padding: 0 0 0 20px;
-    height: 53px;
-    width: 220px;
-    border:none;
-    border-top: solid 1px #F2F2F2;
-    border-bottom: solid 1px #F2F2F2;
-}
-
-.search-form-recherche
-{
-    border:none;
-    border-radius: 0px 14px 14px 0px;
-    color:white;
-    font-size: 16px;
-    padding: 17px;
-    cursor: pointer;
-}
-#icon-glass
-{
-    display: none;
-}
+/*hebergement marseille*/
 section.hotels 
 {
     display: flex;
 }
-/*hebergement marseille*/
 h3.hotel-name
 {
     margin-block: auto;
@@ -313,7 +315,7 @@ h3.hotel-name
      
      grid-column-start: 1;
      grid-column-end: 4;
-     margin: auto;
+     margin: 20px;
  }
 .hotels-principal-chambres
 {
@@ -947,42 +949,36 @@ footer
         {
     
             width: auto;
-           /* min-width: 300px;*/
             height: 260px;
             margin-bottom: 20px;
         }
         #activity2
         {
             width: auto;
-           /* min-width: 300px;*/
             height: 260px;
             margin-bottom: 20px;
         }
         #activity3
         {
             width:auto;
-           /* min-width: 300px;*/
             height: 260px;
             margin-bottom: 20px;
         }
         #activity4
         {
             width: auto;
-           /* min-width: 300px;*/
             height: 260px;
             margin-bottom: 20px;
         }
         #activity5
         {
             width: auto;
-           /* min-width: 300px;*/
             height: 260px;
             margin-bottom: 20px;
         } 
         #activity6
         {
             width: auto;
-           /* min-width: 300px;*/
             height: 260px;
             margin-bottom: 20px;
         }
@@ -990,7 +986,6 @@ footer
         .activity-marseille-nat1
         {
             width: 100%;
-           /* min-width: 340px ;*/
             height: 200px;
             margin: 0;
             border-radius:20px 20px 0px 0px;
@@ -998,7 +993,6 @@ footer
         .activity-marseille-nat2
         {
             width: 100%;
-           /* min-width: 340px ;*/
             height: 200px;
             margin: 0;
             border-radius:20px 20px 0px 0px;
@@ -1006,7 +1000,6 @@ footer
         .activity-marseille-nat3
         {
             width: 100%;
-           /* min-width: 340px ;*/
             height: 200px;
             margin: 0;
             border-radius:20px 20px 0px 0px;
@@ -1014,7 +1007,6 @@ footer
         .activity-marseille-nat4
         {
             width: 100%;
-           /* min-width: 340px ;*/
             height: 200px;
             margin: 0;
             border-radius:20px 20px 0px 0px;
@@ -1096,7 +1088,6 @@ footer
     box-shadow: 6px 6px 10px gainsboro;
     border-radius: 20px;
     width: auto;
-    /*min-width: 380px;*/
     height: 245px;
     }
 
@@ -1141,7 +1132,6 @@ footer
         {
             width: auto;
             max-width: 480px;
-           /* min-width: 380px;*/
             height: 260px;
             margin: auto;
             
@@ -1150,7 +1140,6 @@ footer
         {
             width: auto;
             max-width: 480px;
-           /* min-width: 380px;*/
             height: 260px;
             margin: auto;
            
@@ -1159,7 +1148,6 @@ footer
         {
             width:auto;
             max-width: 480px;
-           /* min-width: 380px;*/
             height: 260px;
             margin: auto;
             
@@ -1168,7 +1156,6 @@ footer
         {
             width: auto;
             max-width: 480px;
-           /* min-width: 380px;*/
             height: 260px;
             margin: auto;
             
@@ -1177,7 +1164,6 @@ footer
         {
             width: auto;
             max-width: 480px;
-           /* min-width: 380px;*/
             height: 260px;
             margin: auto;
             
@@ -1186,7 +1172,6 @@ footer
         {
             width: auto;
             max-width: 480px;
-           /* min-width: 380px;*/
             height: 260px;
             margin: auto;
             margin-bottom: 15px;
@@ -1256,39 +1241,21 @@ footer
  
     .filtres-button
     {
-       margin-bottom:10px;
+        margin-bottom:10px;
     }
     #familial
     {
-       max-width: 150px;
+        max-width: 150px;
     }
    
 }
-
-@media screen and (max-width:500px)
+@media screen and (max-width:600px)
 {
-    /*#titrePrincipale*/
-    #nav-bar
-    {
-        grid-template-columns:  1fr;
-        grid-template-rows:1fr 1fr ;
-        grid-template-areas: 
-        "logo inscript"
-        "activite hebergement";
-    }
-}
-@media screen and (max-width:365px)
-{
-    .recherche-endroie-input
-    {
-        width: auto;
-    }
-    .filtre-ul
+    .footer-blocs
     {
         display: flex;
         flex-direction: column;
     }
-
 }
 @media screen and (max-width:550px)
 {
@@ -1323,13 +1290,7 @@ footer
         border-bottom: 2px solid #0065FC;
         border-top: none;
     }
-    /*.filtres-ul
-    {
-        display: flex;
-        flex-direction: column;
-    }*/
-
-
+ 
     .search-form-recherche
     {
         display: none;
@@ -1348,14 +1309,31 @@ footer
     }
 }
 
-
-@media screen and (max-width:600px)
+@media screen and (max-width:500px)
 {
-    .footer-blocs
+    #nav-bar
+    {
+        grid-template-columns:  1fr;
+        grid-template-rows:1fr 1fr ;
+        grid-template-areas: 
+        "logo inscript"
+        "activite hebergement";
+    }
+}
+@media screen and (max-width:365px)
+{
+    .recherche-endroie-input
+    {
+        width: auto;
+    }
+    .filtre-ul
     {
         display: flex;
         flex-direction: column;
     }
+
 }
+
+
 
     
