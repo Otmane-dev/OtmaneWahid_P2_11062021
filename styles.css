@@ -363,6 +363,10 @@ i
 {
     color:#0065FC;
 }
+#voir-plus
+{
+    font-weight: bold;
+}
 /*les plus populaires*/
 p.populaire-price
 {
