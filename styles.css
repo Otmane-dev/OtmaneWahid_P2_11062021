@@ -1076,7 +1076,7 @@ footer
     {
         display: grid;
         grid-template-columns: 1fr ;
-        grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr 1fr 50px;
+        grid-template-rows: 60px 1fr 1fr 1fr 1fr 1fr 1fr 50px;
         margin: 10px;   
         background: none;
     }
@@ -1210,6 +1210,18 @@ footer
             margin: 0;
             border-radius:20px 20px 0px 0px;
         }
+        section#activite-bloc
+        {
+            display: flex;
+        }
+        .activitys
+        {
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 80px 1fr;
+        }
+        
 
 }
 
