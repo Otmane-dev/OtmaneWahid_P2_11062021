@@ -1125,7 +1125,7 @@ footer
     background-color: #F2F2F2;
 }
 
-
+  
     .activity
     {
         display:flex;
@@ -1252,6 +1252,7 @@ footer
     {
         max-width: 150px;
     }
+ 
    
 }
 @media screen and (max-width:600px)
@@ -1312,6 +1313,7 @@ footer
         background-color:#0065FC;
         border-radius: 14px;
     }
+    
 }
 
 @media screen and (max-width:500px)
