@@ -226,7 +226,6 @@ h1
 {
     display: flex;
     align-items: center;
-    justify-content: auto;
     cursor: pointer;
     width: 150px;
     height: 45px;
@@ -286,7 +285,7 @@ section.hotels
 }
 h3.hotel-name
 {
-    margin-block: auto;
+    margin: 0px;
 }
 .hotels-principal
 {
@@ -304,7 +303,6 @@ h3.hotel-name
     width: auto;
     height: 245px;
     border: 5px solid transparent;
-    box-shadow: 0px 0px 0px 6px 0px #0000002e;
       
 }
 .hotels-principal-chambre
@@ -384,7 +382,7 @@ h2#bloc
 }
 h3.populaire-name
 {
-    margin-block: auto;
+    margin: 0px;
 }
 i.fas.fa-chart-line
 {
@@ -429,7 +427,6 @@ h2.hotels-populaire-titre
     min-width: 292px;
     height: 150px;
     border: 5px solid transparent;
-    box-shadow: 0px 0px 0px 6px 0px #0000002e;
 }
 .hotels-populaires-chambre
 {
@@ -529,7 +526,6 @@ h2.hotels-populaire-titre
     border-radius: 20px ;
     border-bottom: 20px;
     border: none;
-    box-shadow: 0px 0px 0px 6px 0px #0000002e;
  }
  
 
@@ -545,7 +541,6 @@ h2.hotels-populaire-titre
     border-radius: 20px ;
     border-bottom: 20px;
     border:none;
-    box-shadow: 0px 0px 0px 6px 0px #0000002e;
  }
 
  #activity3
@@ -560,7 +555,6 @@ h2.hotels-populaire-titre
     border-radius: 20px ;
     border-bottom: 20px;
     border:none;
-    box-shadow: 0px 0px 0px 6px 0px #0000002e;
  }
 
  
@@ -576,7 +570,6 @@ h2.hotels-populaire-titre
     border-radius: 20px ;
     border-bottom: 20px;
     border: none;
-    box-shadow: 0px 0px 0px 6px 0px #0000002e;
  }
  #activity5
  {
@@ -590,7 +583,6 @@ h2.hotels-populaire-titre
     border-radius: 20px ;
     border-bottom: 20px;
     border:none;
-    box-shadow: 0px 0px 0px 6px 0px #0000002e;
  }
  
  #activity6
@@ -605,7 +597,6 @@ h2.hotels-populaire-titre
     width: auto;
     height: 306px;
     border: none;
-    box-shadow: 0px 0px 0px 6px 0px #0000002e;
     margin: 0px;
  }
  
@@ -907,7 +898,6 @@ footer
     min-width: 242px;
     height: 245px;
     border: 5px solid transparent;
-    box-shadow: 0px 0px 0px 6px 0px #0000002e;
     }
    
     .hotels-principal-chambre-img-host
@@ -1374,7 +1364,3 @@ footer
     }
 
 }
-
-
-
-    
