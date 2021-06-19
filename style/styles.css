@@ -349,6 +349,7 @@ h3.hotel-name
     bottom:0;
     background-color: white;
 }
+
 .chambre-text
 {
     margin-left: 10px;
@@ -375,6 +376,7 @@ i
 p.populaire-price
 {
     margin: auto;
+    padding-top: 15px;
 }
 h2#bloc
 {
@@ -450,6 +452,10 @@ h2.hotels-populaire-titre
     border-radius: 20px 0px 0px 20px;
 }
 
+.etoile
+{
+    padding-top: 50px;
+}
 
  .activity
  {
