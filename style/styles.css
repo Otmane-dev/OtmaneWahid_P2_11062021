@@ -1349,6 +1349,18 @@ footer
         "activite hebergement";
     }
 }
+@media screen and (max-width:415px)
+{
+    .etoile
+    {
+        padding-top: 0px;
+    }
+    p.populaire-price
+    {
+        padding-top: 0px;
+    }
+
+}
 @media screen and (max-width:365px)
 {
     .recherche-endroie-input
